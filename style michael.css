@@ -1,0 +1,15 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    max-width: 1190px;
+    margin: auto;
+    border: 2px solid rgb(202, 202, 202);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
