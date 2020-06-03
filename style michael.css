@@ -1,15 +1,244 @@
+* {
+    flex-basis: auto;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 10px;
+}
+
+
+                /*  MAIN (Aside + Artice) */
+
+main {
     display: flex;
-    flex-direction: column;
-    text-align: justify;
+    flex-direction: row;
     max-width: 1190px;
     margin: auto;
-    border: 2px solid rgb(202, 202, 202);
-    margin-top: 10px;
+    border: 1px solid rgb(202, 202, 202);
+    min-height: calc(100vh - 20px);
+}
+
+
+        /*         ASIDE        */
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    width: 33%;
+    background-color: #4FC3F7;
+    border: 1px solid rgb(202, 202, 202);
+}
+
+aside img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+aside h2 {
+    color:  #4FC3F7;
+    background-color: black;
+    margin: 0 -20px;
+    text-align: center;
+}
+
+#Loisirs {
+    display: flex;
+    flex-direction: column;
+}
+
+#logos {
+    font-size: 3rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+
+        /*      ARTICLE      */
+
+article {
+    padding: 20px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    background-color: #FFF8E1;
+}
+
+article section {
+    display: flex;
+    flex-direction: column;
+}
+
+    /* Article : titres */
+
+article section h1 {
+    margin-left: 12%;
+    font-size: 4rem;
     margin-bottom: 10px;
 }
 
+article section h2 {
+    margin-left: 12%;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+article .title { 
+    display: flex;
+    align-items: center;
+    margin: 0 -20px;
+    text-align: center;
+    border-bottom: 2px #4FC3F7 solid;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+article .title i {
+    font-size: 2rem;
+    margin-left: 11%;
+    margin-right: 11%;
+}
+
+article .title h2 {
+    margin: 0;
+}
+
+   /* Article : blocs d'informations */
+
+.bloc {
+    display: flex;
+    flex-direction: row;
+    padding-right: 20px;
+}
+
+.date {
+    display: flex;
+    flex-direction: row;
+    padding-top: 22px;
+    width: 25%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: center;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+section h3,
+section h4 {
+  margin-bottom: 0;
+}
+
+section h4 {
+  margin-top: 0;
+}
+
+  /* ++ Article : Expérience professionnelle */
+
+#experience_professionnelle .bloc .text p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+  /* ++ Article : Recommandations */
+
+#recommandations .bloc {
+    justify-content: space-evenly;
+}
+
+
+  /*     RESPONSIVE     */
+
+  /*   medium screens   */
+
+@media screen and (max-width: 1024px) {
+
+    main {
+        flex-direction: column;
+    }
+    
+    aside {
+        width: 100%;
+    }
+
+    aside img {
+        max-width: 300px;
+        max-height: 350px;
+        display: block;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #responsive_wrap {
+        display: flex;
+        flex-direction: row;
+        flex-flow: row wrap;
+    }
+
+}
+
+  /*    small screens    */
+  
+@media screen and (max-width: 740px) {
+
+    main {
+        flex-direction: column;
+    }
+    
+    aside {
+        width: 100%;
+    }
+
+    aside img {
+        max-width: 300px;
+        max-height: 350px;
+        display: block;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #responsive_wrap {
+        display: flex;
+        flex-direction: row;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+
+    .bloc {
+        flex-direction: column;
+    }
+    .date {
+        width: 100%;
+    }
+
+    .title {
+        flex-direction: column;
+    }
+
+    #responsive_recommandations {
+        flex-direction: row;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    .mentor {
+        margin: 10px;
+    }
+
+}
 
 
 
