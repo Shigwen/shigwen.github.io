@@ -64,7 +64,7 @@ aside h2 {
 
         /*      ARTICLE      */
 
-article {
+.article {
     padding: 20px;
     display: flex;
     flex-grow: 1;
@@ -72,26 +72,26 @@ article {
     background-color: #FFF8E1;
 }
 
-article section {
+.article section {
     display: flex;
     flex-direction: column;
 }
 
     /* Article : titres */
 
-article section h1 {
+.article section h1 {
     margin-left: 12%;
     font-size: 4rem;
     margin-bottom: 10px;
 }
 
-article section h2 {
+.article section h2 {
     margin-left: 12%;
     font-size: 2rem;
     margin-bottom: 40px;
 }
 
-article .title { 
+.article .title { 
     display: flex;
     align-items: center;
     margin: 0 -20px;
@@ -102,13 +102,13 @@ article .title {
 }
 
 
-article .title i {
+.article .title i {
     font-size: 2rem;
     margin-left: 11%;
     margin-right: 11%;
 }
 
-article .title h2 {
+.article .title h2 {
     margin: 0;
 }
 
